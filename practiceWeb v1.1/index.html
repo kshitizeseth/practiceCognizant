@@ -1,0 +1,308 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <script>
+       function login(){
+           var email = document.getElementById("formEmail").value;
+           var password = document.getElementById("formPassword").value;
+           var i ,flag=0;
+           alert(password);
+           var plen = password.length;
+            if(plen>=8){
+                for(i = 0; i < password.length;i++)
+           {
+            if(password.charAt(i) == '!' || password.charAt(i) == '@' || password.charAt(i) == '#' || 
+            password.charAt(i) == '$' || password.charAt(i) == '%' || password.charAt(i) == '^' ||
+            password.charAt(i) == '&' ||password.charAt(i) == '*')
+            flag=1;
+                    
+           }
+           if(flag == 1){
+            for(i = 0; i < password.length;i++)
+           {
+            if(password.charAt(i) == '0' || password.charAt(i) == '1' || password.charAt(i) == '2' || 
+            password.charAt(i) == '3' || password.charAt(i) == '4' || password.charAt(i) == '5' ||
+            password.charAt(i) == '6' ||password.charAt(i) == '7' ||password.charAt(i) == '8'
+            ||password.charAt(i) == '9')
+            flag=1;
+                    
+           }
+           }
+           if(flag == 1){
+               alert("Password Sahi")
+           }
+           if(flag==0)
+           alert("Galt hai");
+           
+        }
+       }
+  </script>
+</head>
+<body  id="bdy" class="bg-dark" onclick="">
+
+<header>
+    <nav class="navbar navbar-light bg-success">
+        <a class="nav-link text-white" href="#">Home</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="#news-events">News</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="#news-events">Events</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="#services">Services</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="about.html">About</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="#" onclick="on()">World Wide</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="#" onclick="srch()">Search</a>
+  
+
+    </nav>
+</header>
+<div id="pop" class="container-fluid" style="position: fixed; 
+display: none;
+width: 100%;
+height: 100%; 
+top: 0; 
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5); 
+z-index: 2;
+text-align: center;
+">
+    <div class="row"> 
+        <div class="col-xm-12 col-md-12 col-xs-12"   style="text-align: center">
+            <label id="#txtt" style="font-size: 900%" class="text-primary"><b>Sign Up</b></label>
+        </div>
+    </div>
+    <div class="row" style="text-align: center">
+        <div class="col-xm-6 col-md-6 col-xs-6"   style="text-align: center">
+            <input type="text" placeholder="Name">
+        </div>
+    </div>
+    </div>
+
+<div id="searchdiv" style="background-color: white ;display: none;height: inherit;width: inherit;">
+    <div class="navbar" ><button onclick="srchclose()" class="btn btn-primary">Close</button></div>
+    <div class="container-fluid">
+            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: center">
+                <input type="text" placeholder="Enter your Query here" class="form-control">
+            </div>
+        </div>
+</div>
+
+<div onclick="off()" id="maindiv">
+    
+    <div class="container-fluid" style="margin-top: 6px">
+        <div class="row">
+            <div class="col-xm-9 col-md-9 col-xs-9" style="text-align: center">
+                <label style="font-size: 900%" class="text-primary"><b>Cognizant</b></label>
+            </div>
+            <div class="col-xm-3 col-md-3 col-xs-3" onmouseover="noscroll()">
+                <form >
+                    <div  class="form-group">
+                        <label class="text-white">Email:</label>
+                        <input type="text" id="formEmail" placeholder="Email" required class="form-control">
+                    </div>
+                    <div  class="form-group">
+                        <label class="text-white">Password:</label>
+                        <input type="password" id="formPassword" placeholder="Password" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" onclick="login()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel" style="margin-bottom: 20px">
+    
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="text-align: center">
+                <img src="images/values.jpg" alt="Los Angeles" width="700" height="300">
+              </div>
+              <div class="carousel-item" style="text-align: center">
+                <img src="images/The-Avett-Brothers-Concert-Bojangles.jpeg" alt="Chicago" width="700" height="300">
+              </div>
+              <div class="carousel-item" style="text-align: center">
+                <img src="images/download.png" alt="New York" width="700" height="300">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    
+    <div class="container-fluid" id="news-events" style="text-align: center; ">
+       
+        <div class="row">
+            <div id="newsdiv" onmouseout="doscroll()" class="col-xm-6 col-md-6 col-xs-6" style="text-align: center;height: 300px;overflow: scroll;border-right: 2px solid white ">      
+               <div class="row">
+                <div class="col-xm-12 col-md-12 col-xs-12">
+                    <label style="font-size: 300%;" class="text-primary"><b>News</b></label>   
+                          
+                </div>
+               </div>
+               <div class="row">
+                    <div class="col-xm-12 col-md-12 col-xs-12">
+                            <p style="text-align: left" class="text-white">
+                                    <b class="text-primary">Feb 11, 2019</b><br>
+                                    Consulting U.S.: Cognizant Opens New Accelerator Office in Boulder, Colorado<br>
+                                    <b class="text-primary">Feb 8, 2019</b><br>
+                                    Internet Retailing, UK: Cognizant’s Chief Digital Officer and Global Consulting Leader, Retail, Consumer Goods, Travel and Hospitality, Discusses what Retailers can Learn from Traditional Markets<br>
+                                <b class="text-primary">Feb 8, 2019</b><br>
+                                    MAKERS 2019: Getting to Equal Footing - Cognizant Pledges to Employ at least 100,000 Women Around the World by 2020<br>
+                                    <b class="text-primary">Feb 8, 2019</b><br>
+                                    CNBCTV18, India: A Look at How Francisco D’Souza did IT<br>
+                                    <b class="text-primary">Feb 7, 2019</b><br>
+                                    BizWest, US: Cognizant’s SVP and President Cognizant Accelerator says Culture Drives the Ability to Experiment<br>
+                                    <b class="text-primary">Feb 7, 2019</b><br>
+                                    Dagens Nyheter, Sweden: Cognizant Leadership Provides Perspective on the Fourth Industrial Revolution<br>
+                                    <b class="text-primary">Feb 7, 2019</b><br>
+                                    ITProPortal, UK: Cognizant’s AVP, Center for the Future of Work, Outlines Five Digital Trends for 2019<br>
+                                    <b class="text-primary">Feb 5, 2019</b><br>
+                                    Customer Experience Magazine, UK: Cognizant’s Head of Digital Business, Europe, Outlines Ways to Improve the Customer Experience
+                                    
+            
+                            </p>
+                                  
+                        </div>
+    
+                       
+               </div>
+            </div>
+            
+            <div id="eventsdiv" onmouseout="doscroll2()" class="col-xm-6 col-md-6 col-xs-6 " style="text-align: center;height: 300px; overflow: scroll;" >
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12">
+                                    <label style="font-size: 300%;" class="text-primary"><b>Events</b></label> 
+                            </div>
+                            
+        
+        
+                    </div>
+                <div class="row">
+                        <div class="col-xm-4 col-md-4 col-xs-4">
+                            <label class="text-primary"><u><b>February 18–21, 2019</b></u></label>
+                        </div>
+                        <div class="col-xm-8 col-md-8 col-xs-8">
+                                <p style="text-align: left" class="text-white"><b class="text-success" >Summit for Clinical Operations Executives (SCOPE) 2019</b><br>
+                                        Cognizant’s Life Sciences business unit is a premiere sponsor of SCOPE 2019. We’ll be hosting the first-ever Shared Investigator Platform User Forum; presenting our expertise in using digital technologies to improve clinical operations; and holding discussions and demos in Booth 907 in the Exhibit Hall. Join us!<br>
+            
+                                        <b class="text-secondary">Hyatt Regency Orlando | Orlando, FL</b></p>
+                            </div>
+    
+    
+                </div>
+                <div class="row">
+                        <div class="col-xm-4 col-md-4 col-xs-4">
+                            <label  class="text-primary"><u><b>March 19–21, 2019</b></u></label>
+                        </div>
+    
+                        <div class="col-xm-8 col-md-8 col-xs-8">
+                                <p style="text-align: left" class="text-white"><b class="text-success">Modern Business Experience</b><br>
+                                        Cognizant is a Platinum sponsor of Modern Business Experience—a thought leadership conference, presented by Oracle, dedicated to finance, human resources and supply chain professionals. The event is designed around inspiring keynotes, product expert discussions and networking activities. Join us at the event and help your customers prepare for a digital future.<br>
+                                        
+                                        <b class="text-secondary">Mandalay Bay Convention Center | Las Vegas</b></p>
+                            </div>
+    
+    
+                </div>
+    
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="news-events" style="text-align: center; margin-top: 10px;margin-bottom: 20px">
+        <label class="text-primary" id="services" style="font-size: 300%;"><b>Our Services</b></label>
+    <div class="row">
+            <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: left;border-right: 2px solid white ">
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;line-height: 80%">
+                                <p ><b style="font-size: 100%" class="text-white">Cognizant</b><br>
+                                <p style="font-size: 120%"  class="text-white">Digital Business</p></p>                
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;">
+                                    <p class="text-success">Working to reshape business models, modernize products and enhance customer experiences to drive growth.</p>             
+                            </div>
+                    </div>
+    
+            </div>
+            <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: left;border-right: 2px solid white ">
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;line-height: 80%">
+                                <p ><b style="font-size: 100%" class="text-white">Cognizant</b><br>
+                                <p style="font-size: 120%" class="text-white">Digital Operations</p></p>                
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;">
+                                    <p  class="text-success">Reinventing and managing your most essential business processes with new ways of working.</p>             
+                            </div>
+                    </div>
+    
+            </div>
+            <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: left;">
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;line-height: 80%">
+                                <p ><b style="font-size: 100%" class="text-white">Cognizant</b><br>
+                                <p style="font-size: 120%"  class="text-white">Digital Systems & Technologies</p></p>                
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: left;">
+                                    <p class="text-success">Simplifying, modernizing and securing the IT infrastructure and applications that are the backbone of your business.</p>             
+                            </div>
+                    </div>
+    
+            </div>
+    </div>
+    </div>
+</div>
+<footer id="ftr" >
+   <div class="container-fluid">
+        <div class="row">
+                <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: center;">
+                        <a href="#" onclick="sitemapclick()" class="text-white">Site Map</a>
+                    </div>
+        </div>
+        <div class="row" style="display: none" id="sitemaphide">
+                <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                        <label class="text-white">Site Map</label>
+                    </div>
+                    <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                            <label class="text-white">Site Map</label>
+                        </div>
+                        <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                <label class="text-white">Site Map</label>
+                            </div>
+        </div>
+   </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
