@@ -1,0 +1,351 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <script>
+      function news(i){
+          if(i == 1){
+              document.getElementById("n1").style.display = "block";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 2){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "block";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 3){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "block";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 4){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "block";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 5){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "block";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 6){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "block";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 7){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "block";
+              document.getElementById("n8").style.display = "none";
+          }
+          if(i == 8){
+              document.getElementById("n1").style.display = "none";
+              document.getElementById("n2").style.display = "none";
+              document.getElementById("n3").style.display = "none";
+              document.getElementById("n4").style.display = "none";
+              document.getElementById("n5").style.display = "none";
+              document.getElementById("n6").style.display = "none";
+              document.getElementById("n7").style.display = "none";
+              document.getElementById("n8").style.display = "block";
+          }
+      }
+  </script>
+  <style>
+        .dropbtn {
+          background-color: #28a745;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+         <style>
+        .dropbtn {
+          background-color: #28a745;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+</head>
+<body  id="bdy" class="bg-dark" onclick="">
+
+<header>
+    <nav class="navbar navbar-light bg-success">
+        <a class="nav-link text-white" href="index.html">Home</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="index.html#news-events">News</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="index.html#news-events">Events</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="index.html#services">Services</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="about.html">About</a>
+        <span class="text-white">|</span>
+        <a class="nav-link text-white" href="signup.html">Sign Up</a>
+        <span class="text-white">|</span>
+        
+        <a class="nav-link text-white" href="#" onclick="srch()">Search</a>
+        <span class="text-white">|</span>
+        <div class="dropdown">
+            <button class="dropbtn">Worldwide</button>
+            <div class="dropdown-content container-fluid">
+              <a href="#" ><img src="images/india.jpg" width="20px" height="15px">India</a>
+              <a href="#"><img src="images/japan.png" width="20px" height="15px">Japan</a>
+              <a href="#"><img src="images/uk.png" width="20px" height="15px">UK</a>
+            </div>
+          </div>
+
+    </nav>
+</header>
+
+
+<div id="searchdiv" style="background-color: white ;display: none;height: inherit;width: inherit;">
+    <div class="navbar" ><button onclick="srchclose()" class="btn btn-primary">Close</button></div>
+    <div class="container-fluid">
+            <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: center">
+                <input type="text" placeholder="Enter your Query here" class="form-control">
+            </div>
+        </div>
+</div>
+
+<div id="maindiv">
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-xm-12 col-md-12 col-xs-12">
+                                <p style="text-align: left" class="text-white">
+                                        <a class="text-primary" href="#" onclick="news(1)">Feb 11, 2019</a><br>
+                                        <div class="text-white" id="n1" style="display: none">Consulting U.S.: Cognizant Opens New Accelerator Office in Boulder, Colorado</div><br>
+                                        <a class="text-primary" href="#" onclick="news(2)">Feb 8, 2019</a><br>
+                                        <div class="text-white"  id="n2" style="display: none">Internet Retailing, UK: Cognizant’s Chief Digital Officer and Global Consulting Leader, Retail, Consumer Goods, Travel and Hospitality, Discusses what Retailers can Learn from Traditional Markets</div><br>
+                                        <a class="text-primary" href="#" onclick="news(3)">Feb 8, 2019</a><br>
+                                        <div class="text-white" id="n3"  style="display: none">MAKERS 2019: Getting to Equal Footing - Cognizant Pledges to Employ at least 100,000 Women Around the World by 2020</div><br>
+                                        <a class="text-primary" href="#" onclick="news(4)">Feb 8, 2019</a><br>
+                                        <div class="text-white"  id="n4" style="display: none"> CNBCTV18, India: A Look at How Francisco D’Souza did IT</div><br>
+                                        <a class="text-primary" href="#" onclick="news(5)">Feb 7, 2019</a><br>
+                                        <div class="text-white"  id="n5" style="display: none"> BizWest, US: Cognizant’s SVP and President Cognizant Accelerator says Culture Drives the Ability to Experiment</div><br>
+                                        <a class="text-primary" href="#" onclick="news(6)">Feb 7, 2019</a><br>
+                                        <div class="text-white"  id="n6" style="display: none"> Dagens Nyheter, Sweden: Cognizant Leadership Provides Perspective on the Fourth Industrial Revolution</div><br>
+                                        <a class="text-primary" href="#" onclick="news(7)">Feb 7, 2019</a><br>
+                                        <div class="text-white"  id="n7" style="display: none"> ITProPortal, UK: Cognizant’s AVP, Center for the Future of Work, Outlines Five Digital Trends for 2019</div><br>
+                                        <a class="text-primary" href="#" onclick="news(8)">Feb 5, 2019</a><br>
+                                        <div class="text-white"  id="n8" style="display: block"> Customer Experience Magazine, UK: Cognizant’s Head of Digital Business, Europe, Outlines Ways to Improve the Customer Experience</div>
+                                        
+                
+                                </p>
+                                      
+                            </div>
+        
+                           
+                   </div>
+        </div>
+            
+            
+            
+</div>
+<footer id="ftr" >
+        <div class="container-fluid">
+             <div class="row">
+                     <div class="col-xm-12 col-md-12 col-xs-12" style="text-align: center;">
+                             <label class="text-white">Site Map</label>
+                         </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="index.html" class="text-primary">Home</a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="#" class="text-primary">News</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="events.html" class="text-primary">Events</a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="index.html#services" class="text-primary">Our Services</a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.1.html" class="text-primary">Consulting U.S.: Cognizant Opens...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="events.1.html" class="text-primary">Summit for Clinical Operations...</a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="about.html" class="text-primary">About Us</a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.2.html" class="text-primary">Internet Retailing, UK: Cognizant’s...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="events.2.html" class="text-primary">Modern Business Experience...</a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="signup.html" class="text-primary">Sign Up</a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.3.html" class="text-primary">MAKERS 2019: Getting to Equal...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="#" class="text-primary"></a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.4.html" class="text-primary">CNBCTV18, India: A Look at...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="#" class="text-primary"></a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.5.html" class="text-primary">BizWest, US: Cognizant’s SVP...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="#" class="text-primary"></a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.6.html" class="text-primary">Dagens Nyheter, Sweden...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="#" class="text-primary"></a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.7.html" class="text-primary">ITProPortal, UK: Cognizant’s...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+             <div class="row" id="sitemaphide">
+                     <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                             <a href="#" class="text-primary"></a>
+                         </div>
+                         <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                 <a href="news.8.html" class="text-primary">Customer Experience Magazine...</a>
+                             </div>
+                             <div class="col-xm-4 col-md-4 col-xs-4" style="text-align: center;">
+                                     <a href="#" class="text-primary"></a>
+                                 </div>
+             </div>
+            
+        </div>
+     </footer>
+
+</body>
+</html>
